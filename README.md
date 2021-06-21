@@ -82,3 +82,95 @@ public class Main {
         }
     }
 }
+
+
+package practika2;
+
+import java.util.Scanner;
+
+public class Client {
+
+    Scanner in = new Scanner(System.in);
+
+    public String name;
+    public String address;
+    public int telephone;
+    public String FIO;
+
+    Client(String name, String address, int telephone, String FIO) {
+        this.name = name;
+        this.address = address;
+        this.telephone = telephone;
+        this.FIO = FIO;
+    }
+
+    Client() {
+        name = "Nothing";
+        address = "Nothing";
+        telephone = 00000000;
+        FIO = "Nothing";
+    }
+
+
+    public void zapolnenie1(String name) {
+        this.name = in.nextLine();
+    }
+    public void zapolnenie2(String address) {
+        this.address = in.nextLine();
+    }
+    public void zapolnenie3(int telephone) {
+        this.telephone = in.nextInt();
+    }
+    public void zapolnenie4(String FIO) {
+        this.FIO = in.nextLine();
+    }
+}
+
+
+package practika2;
+
+import java.util.Scanner;
+
+public class Product {
+
+    Scanner in = new Scanner(System.in);
+
+    public static String name;
+    public static int cost;
+    public static String info;
+    public boolean delivery;
+
+    Product(String n, int c, String i, boolean d) {
+
+        this.name = n;
+        this.cost = c;
+        this.info = i;
+        this.delivery = d;
+    }
+
+    Product() {
+
+        name = "nothing";
+        cost = 0;
+        info = "nothing";
+        delivery = false;
+    }
+
+
+    public void vvod1(String name) {
+        this.name = in.nextLine();
+    }
+
+    public void vvod2(int cost) {
+        this.cost = in.nextInt();
+    }
+
+    public void vvod3(String info) {
+        this.info = in.nextLine();
+    }
+
+    public void vvod4(boolean delivery) {
+        this.delivery = in.nextBoolean();
+    }
+}
+
